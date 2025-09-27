@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Testeo</string>
+    <string name="textoInicio">Bienvenido, pulsa el botón inferior para comenzar</string>
+    <string name="botonComenzar">Comenzar</string>
+    <string name="helloWorld">Hello World!</string>
+    <string name="botonAtras">Volver</string>
+    <string name="botonSalir">Salir</string>
+</resources>
