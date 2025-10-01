@@ -1,27 +1,15 @@
 package com.example.testeo
 
+import android.media.session.MediaController
 import android.os.Bundle
-import android.view.View
-import androidx.activity.enableEdgeToEdge
+import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
-
-    fun buttonClick(view: View?) {
-        setContentView(R.layout.helloworld)
-    }
-
-    fun buttonBack(view: View?) {
-        setContentView(R.layout.activity_main)
-    }
-
-    fun buttonExit(view: View) {
-        System.exit(0);
+        val videoView: VideoView = findViewById(R.id.videoSuperior)
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.inicio);
     }
 }
